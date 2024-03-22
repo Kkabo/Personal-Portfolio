@@ -2,7 +2,7 @@
 
 ## Overview
 
-- **Link**: [Portfolio Website](https://dardan-portfolio-lac.vercel.app/)
+- **Link**: [Portfolio Website](https://dardan-portfolio-alpha.vercel.app/)
 
   Logo branding is personal and owned by myself.
 
