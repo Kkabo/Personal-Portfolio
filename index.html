@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dardan Kabashi</title>
+  <link rel="shortcut icon" type="x-icon" href="./assets/DK.png" /> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){ 
+      emailjs.init({
+        publicKey: "Oc4CmEJ9d6W8GtK3c",   
+      });  
+   })();  
+</script>
+  
+</head>  
+ 
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav> 
+      <figure>
+        <img id="personal-logo" src="./assets/DK.png" alt="">  
+      </figure>
+      <ul class="nav__link--list"> 
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black 
+          ">About</a> 
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1> 
+        <h1 class="title blue">I'm Dardan.</h1>
+        <p class="header__para">
+          I'm a <b class="blue">Software Engineer</b> with a strong passion for building web applications
+          with great user
+          experiences.
+          <br>
+          Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/dardankabashi/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Kkabo" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i> 
+          </a>
+          <a href="./assets/Dardan Kabashi.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a> 
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <br>
+        <p class="modal__para">
+          As a <b class="blue">Software Engineer</b> with experience developing
+          websites with <b class="blue">easy-to-use interfaces</b>,
+          I solve extremely difficult engineering
+          problems every day by employing cutting-edge algorithms and innovative approaches to push the boundaries of what's possible in <b class="blue">Software Development</b>.
+          <br>
+          Equipped with <b class="blue">strong analytical skills</b> to swiftly address interface issues and a dedication to enhancing <b class="blue">user experiences</b>, I bring an enterprising mindset poised to optimize digital platforms.
+          <br>
+          Proficent in several <b class="blue">Technical Skills</b> as listed below:
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.simpleicons.org/html5/E34F26"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/javascript/F7DF1E"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="">
+            <span class="language__name">Typescript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+              alt="">
+            <span class="language__name">C#</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              alt="">
+            <span class="language__name">Next.js</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/mui/007FFF"
+              alt="">
+            <span class="language__name">Material-UI</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/redux/764ABC"
+              alt="">
+            <span class="language__name">Redux</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+              alt="">
+            <span class="language__name">Tailwind CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/dotnet/512BD4"
+              alt="">
+            <span class="language__name">.Net</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/microsoftsqlserver/CC2927"
+              alt="">
+            <span class="language__name">MS SQL Server</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/npm/CB3837"
+              alt="">
+            <span class="language__name">Npm</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/git/F05032"
+              alt="">
+            <span class="language__name">Git</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/yarn/2C8EBB"
+              alt="">
+            <span class="language__name">Yarn</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.simpleicons.org/firebase/FFCA28"
+              alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://skillicons.dev/icons?i=github"
+              alt="">
+            <span class="language__name">Github</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7"> 
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section> 
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="blue">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Ticket+.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Ticket +
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html | CSS | JavaScript | React (+ Hooks) | Axios
+                </h4>
+                <p class="project__description--para">
+                  Innovative Movie Platform, where cinematic brilliance awaits! Each movie comes with detailed information, including its genre classification, runtime, release year, starring actors, a captivating overview, and insightful user ratings to help you make informed viewing decisions.
+                </p> 
+                <div class="project__description--links">
+                    <a href="https://github.com/Kkabo/Ticket-Plus" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://ticket-plus-kappa.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i> 
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/NFT.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  NFT Marketplace
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html | CSS | JavaScript | React (+ Hooks) | Axios | AOS
+                </h4>
+                <p class="project__description--para">
+                  This project is a React-based NFT marketplace that seamlessly retrieves NFT data from a cloud API, dynamically presenting each NFT alongside its comprehensive details. Utilizing smooth animations through AOS and integrating a carousel component, it offers an engaging platform for users to explore and interact with NFTs efficiently.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Kkabo/NFT-Marketplace" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://nft-mu-ten.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i> 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Millionaire.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Who Wants to Be a Millionaire?
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html | CSS | JavaScript | React (+ Hooks)
+                </h4>
+                <p class="project__description--para">
+                  
+Enhanced Trivia Quiz Application built with React.js, reminiscent of the popular game show "Who Wants to Be a Millionaire," powered by React hooks.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Kkabo/Millionaire" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://millionaire-sand.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i> 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Library.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  E-Commerce Website
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html | CSS | JavaScript | React (+ Hooks) | Axios
+                </h4>
+                <p class="project__description--para">
+                  React E-commerce application, designed to showcase popular and recommended books. Browse through our extensive collection, filter books according to your preferences, and seamlessly add them to your cart for purchase. Enjoy the convenience of shopping for your favorite books from the comfort of your own home.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Kkabo/E-Commerce-Website" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://aquamarine-daffodil-1a7613.netlify.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i> 
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Movies.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Easy-View Movies
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html | CSS | JavaScript | ReactJs | LocalStorage | Firebase
+                </h4>
+                <p class="project__description--para">
+                  React application leveraging Axios to interact with the TMDB API, enabling users to search for movies and view comprehensive details about them.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Kkabo/EasyView" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://easy-view-movies.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i> 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row"> 
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/DK.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span> 
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/Kkabo" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        "> 
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/dardankabashi/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/Dardan Kabashi.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2024 Dardan Kabashi</div>
+      </div>
+    </div>
+  </footer> 
+</body>
+
+</html>
